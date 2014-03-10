@@ -1,0 +1,108 @@
+<div class="row row-offcanvas row-offcanvas-left">
+
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas "  id="sidebar" role="navigation">
+        <div class="list-group">
+            <a href="#about" class="list-group-item active">About</a>
+            <a href="#feature" class="list-group-item">Features</a>
+            <a href="#real" class="list-group-item">Device vs Simulator</a>
+            <a href="#scale" class="list-group-item">Scaling</a>
+            <a href="#download" class="list-group-item">Download</a>
+        </div>
+    </div>
+    <!--/span-->
+
+
+    <div class="col-xs-12 col-sm-9">
+        <p class="pull-left visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle
+                nav
+            </button>
+        </p>
+        <div class="jumbotron">
+            <h1>ios-driver</h1>
+
+            <p>Test any IOS native, hybrid, or mobile web application using the WebDriver.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-lg-6">
+                <h2 id="about">About</h2>
+
+                <p> Test any IOS native, hybrid, or mobile web application using the WebDriver
+                    API. IOS automation is as easy as automation for a browser, due to reuse of
+                    the well known WebDriver API. You can reuse the helper classes from your web
+                    tests to
+                    i.e. create data, and follow the same design patterns you're used to (Page
+                    Object etc.).</p>
+
+            </div>
+
+
+
+            <!--/span-->
+            <div class="col-12 col-sm-12 col-lg-6">
+                <h2 id="features">Features</h2>
+
+                <ul>
+                    <li>Implements the JSON wire protocol</li>
+                    <li>Runs on emulators and devices</li>
+                    <li>Can be run as a regular node in a Selenium Grid</li>
+                    <li>Can be used in an existing Selenium Grid to manage device / simulator
+                        farm
+                    </li>
+                    <li>First class support for localized native apps ( 1 test works for all the
+                        localized versions )
+                    </li>
+                    <li>No need to change the source</li>
+                    <li>No need to jailbreak the device</li>
+                    <li>No ios-driver app to install on the phone</li>
+
+                </ul>
+            </div>
+
+
+            <div class="col-12 col-sm-12 col-lg-6">
+                <h2 id="real">Real Device vs Simulator</h2>
+
+                <p> Using Simulator is the default way to use ios-driver.It offers more
+                    flexibility, and it is faster that tests on real device.However, if your
+                    specific needs require tests on real device, it's possible too!</p>
+
+            </div>
+
+            <!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4">
+                <h2 id="download">Download</h2>
+
+                <p>stable : <a
+                        href="https://github.com/ios-driver/ios-driver/releases/download/0.6.5/ios-server-0.6.5-jar-with-dependencies.jar">0.6.5</a>
+                </p>
+
+                <p>dev build : <a
+                        href="http://ios-driver-ci.ebaystratus.com/userContent/ios-server-standalone-latest.jar">latest</a>
+                </p>
+
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-12 col-lg-12">
+                <h2 id="scale">Scaling</h2>
+
+                <p> ios-driver has been built with scaling in mind. GUI based tests are slow by nature slow and if run sequentially
+                    take too long to provide fast feedback.
+                    By following the webdriver protocol, ios-driver can be
+                    used as a Selenium grid node, and the tests can be run in parallel on the same
+                    architecture as
+                    the one already running the web tests.
+                <img src="images/scale.png" alt="step2.png" width='640'>
+                </p>
+            </div>
+
+        </div>
+        <!--/row-->
+    </div>
+    <!--/span-->
+
+</div>
+<!--/row-->
+<hr>
