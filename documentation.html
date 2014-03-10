@@ -86,7 +86,8 @@
             });
 
             var page = getURLParameter("page");
-            if (!page) {
+
+            if (page==="null") {
                 page = "home";
             }
             loadPage(page);
