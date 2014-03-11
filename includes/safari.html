@@ -36,15 +36,15 @@
 
 
         <p>Before the first run you will need to update the MobileSafari Info.plist to allow
-            ios-driver to edit it</p>
+            ios-driver to edit it. To do this, please execute the following commands in a terminal window.</p>
     <pre class="prettyprint lang-sh">
 $xcodeVersion=`xcode-select --print-path`
 $sudo chmod a+rw "$xcodeVersion/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Applications"
 $sudo chmod -R a+rw "$xcodeVersion/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/Applications/MobileSafari.app"
    </pre>
 
-        <p>From there on you can start testign against mobile safari on simulator.To open the
-            eBay home page using the Java client : </p>
+        <p>From there on you can run your test against mobile safari on a simulator. To open the
+            eBay home page using the Java client, the code looks like this: </p>
 
               <pre class="prettyprint lang-java">
 public static void main(String[] args) throws Exception {

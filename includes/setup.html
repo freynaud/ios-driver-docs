@@ -24,21 +24,26 @@
 <div class="col-12 col-sm-12 col-lg-12">
     <h2 id="tech">Technical overview</h2>
 
-    <p> Webdriver is a great automation tool for browsers. It comes with a very clean API that
+    <p> Selenium / Webdriver is a great automation tool for browsers. It comes with a very clean API that
         describes
         how
         users can interact with a browser. The same API can be used for ios automation as well. In
         the
         end,
-        whatever you test, as long as the user interacts with a GUI, it's always "find something"
-        and then
-        "interact
-        with it".
-        Using that API for ios automation has 2 main advantages :
-        - it's a proven, stable API that is about to become a W3C standard
-        - it decouples the remote implementation from the local client. Selenium already comes with
+        whatever you test, as long as the user interacts with a GUI, it is always about
+        <ol>
+            <li>finding an element</li>
+            <li>and then interacting with the element</li>
+        </ol>
+
+        Using that API for ios automation has two main advantages:
+    <ol>
+        <li>it is a proven and stable API that is about to become a W3C standard</li>
+        <li>it decouples the remote implementation from the local client</li>
+    </ol>
+        Selenium already comes with
         Java,
-        C#, Python, Ruby clients. You can reuse whichever one your comfortable and focus on the
+        C#, Python, Ruby clients. You can reuse whichever one your comfortable with and focus on the
         business
         logic of your tests instead of having to learn a new API.</p>
 
@@ -48,7 +53,7 @@
 <div class="col-12 col-sm-12 col-lg-12">
     <h2 id="sysreq">System requirements for OSX</h2>
 
-    <p> ios-driver is built upon 2 different frameworks from Apple.</p>
+    <p> ios-driver is built upon two different frameworks from Apple.</p>
 
     <p>For <b>native apps</b>, it uses the UIAutomation framework from Apple<a
             href="http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/_index.html">
@@ -97,15 +102,15 @@ iOS Simulator SDKs:
 <div class="col-12 col-sm-12 col-lg-12">
     <h2 id="testapp">Getting a test application</h2>
 
-    <p> We use an example application from Apple : InternationalMountains. You can also use any
-        other app that will work with UIAutomation.
+    <p> We use a sample application from Apple: <strong>InternationalMountains</strong>. You can also use any
+        other app that works with UIAutomation.
 
         To use the InternationalMountains app, download it from <a
                 href="files/InternationalMountains.app.zip">here</a> , and unzip it.
     </p>
 
-    <p> You can also try <a
-            href="files/UICatalog.app.zip">UICatalog</a> which has an example of the UI element available on iOS.</p>
+    <p> You can also try the <a
+            href="files/UICatalog.app.zip">UICatalog</a> application which has an example of all UI elements available on iOS.</p>
 
 </div>
 
@@ -150,7 +155,7 @@ Applications :
 </pre>
 
     <p>Check that the application is recognized by opening a browser and navigating to :
-        http://localhost:4444/wd/hub/status</p>
+        <code>http://localhost:4444/wd/hub/status</code></p>
 
     <p>You should see a json object with all the info about the app.</p>
 
