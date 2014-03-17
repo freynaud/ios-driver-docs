@@ -41,23 +41,30 @@
         ga('send', 'pageview');
 
     </script>
-    
+
 
     <script>
 
         var injectVaribles = function () {
             var version = "0.6.6-SNAPSHOT";
+            var versionStable = "0.6.5";
             var downloadFile = "http://ios-driver-ci.ebaystratus.com/userContent/ios-server-standalone-"
                                        + version + ".jar";
-            var downloadProxy = "http://ios-driver-ci.ebaystratus.com/userContent/ios-grid-plugin-"
-                                        + version + ".jar";
+            var downloadStable = "https://github.com/ios-driver/ios-driver/releases/download/0.6.5/ios-server-0.6.5-jar-with-dependencies.jar";
+            var downloadProxy = "http://ios-driver-ci.ebaystratus.com/userContent/ios-grid-plugin-" + version + ".jar";
             var github = "https://github.com/ios-driver/ios-driver/";
 
             $("#download_me").attr('href', downloadFile);
-            $("#download_proxy").attr('href', downloadProxy);
-//            $("#download_me").html("Download " + version);
+
+            $(".download").attr('href', downloadFile);
             $(".version").html(version);
-            $("#forkme_banner").attr('href', github);
+
+            $(".download_stable").attr('href', downloadStable);
+            $(".version_stable").html(versionStable);
+            $(".download_proxy").attr('href', downloadProxy);
+
+//            $("#download_me").html("Download " + version);
+//            $("#forkme_banner").attr('href', github);
 
             $(".list-group-item").click(function () {
                 $(".list-group-item").each(function () {

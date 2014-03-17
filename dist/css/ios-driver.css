@@ -2,11 +2,11 @@
     background-color: #428bca;
     display: block;
     position: absolute;
-    top: 35px;
-    right: -30px;
+    top: 30px;
+    right: -50px;
     top: -15 px\0/; /* ie8 and 9 */
     right: -32 px\0/; /* ie8 and 9 */
-    width: 150px;
+    width: 200px;
     -ms-transform: rotate(45deg); /* IE9 */
     -moz-transform: rotate(45deg); /* FF3.5/3.6 */
     -o-transform: rotate(45deg); /* Opera 10.5 */
