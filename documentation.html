@@ -35,15 +35,24 @@
 
         var injectVaribles = function () {
             var version = "0.6.6-SNAPSHOT";
-            var downloadFile = "http://ios-driver-ci.ebaystratus.com/userContent/ios-server-standalone-"+version+".jar";
-            var downloadProxy = "http://ios-driver-ci.ebaystratus.com/userContent/ios-grid-plugin-"+version+".jar";
+            var downloadFile = "http://ios-driver-ci.ebaystratus.com/userContent/ios-server-standalone-"
+                                       + version + ".jar";
+            var downloadProxy = "http://ios-driver-ci.ebaystratus.com/userContent/ios-grid-plugin-"
+                                        + version + ".jar";
             var github = "https://github.com/ios-driver/ios-driver/";
 
             $("#download_me").attr('href', downloadFile);
             $("#download_proxy").attr('href', downloadProxy);
-            $("#download_me").html("Download " + version);
+//            $("#download_me").html("Download " + version);
             $(".version").html(version);
             $("#forkme_banner").attr('href', github);
+
+            $(".list-group-item").click(function () {
+                $(".list-group-item").each(function () {
+                    $(this).removeClass("active");
+                });
+                $(this).addClass("active");
+            });
 
         }
 
@@ -87,7 +96,7 @@
 
             var page = getURLParameter("page");
 
-            if (page==="null") {
+            if (page === "null") {
                 page = "home";
             }
             loadPage(page);

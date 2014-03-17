@@ -25,7 +25,9 @@
 
 <div class="row">
     <div class="col-12 col-sm-12 col-lg-12">
-        <h2 id="firstTest">Writing the first test for native ios apps</h2>
+        <a class="anchor" id="firstTest"></a>
+
+        <h2>Writing the first test for native ios apps</h2>
 
         <p>Make sure you have gone through the <a href="setup.html" id="setup2">setup</a> page
             and that all the technical requirements are met</p>
@@ -96,7 +98,9 @@ Mountain 1 was first climbed on 29 May 1953 and has a height of 8,848 meters
 
 
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="l10n">Native tests and localization</h2>
+    <a class="anchor" id="l10n"></a>
+
+    <h2>Native tests and localization</h2>
 
     <p>IOS automation is very content based. There are no IDs like for web pages. This makes
         testing of
@@ -205,7 +209,9 @@ public static void main(String[] args) throws MalformedURLException {
 
 
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="locator">Creating locators :</h2>
+    <a id="locator" class="anchor"></a>
+
+    <h2>Creating locators :</h2>
 
     <p>First, have a look at the <a href="?page=inspector">inspector</a>, by opening it in your
         browser under <a href="http://localhost:5555/inspector/" target="_blank">http://localhost:4444/inspector/</a>
@@ -301,7 +307,9 @@ public static void main(String[] args) throws MalformedURLException {
 </div>
 
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="debugElement">Finding debug information about a native WebElement</h2>
+    <a id="debugElement" class="anchor"></a>
+
+    <h2>Finding debug information about a native WebElement</h2>
 
     <p> It is possible to programatically get all the information about a native WebElement and its
         children,without using the UI of the web inspector.This is achieved using the getAttribute
@@ -360,7 +368,9 @@ public void findElementByTagName() throws InterruptedException, JSONException {
 </div>
 
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="advAlert">Advanced Alert handling</h2>
+    <a id="advAlert" class="anchor"></a>
+
+    <h2 id="">Advanced Alert handling</h2>
 
     <p>Native alerts are like any other native element, they're part of the tree and are
         composed of UIAButton, UIAStaticText etc. Alerts can be inspected with the inspector</p>
@@ -383,7 +393,9 @@ public void enterPasswordInAlert()  {
 </div>
 
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="capabilities">Desired capabilities</h2>
+    <a id="capabilities" class="anchor"></a>
+
+    <h2>Desired capabilities</h2>
 
     <p>The map of parameters (the DesiredCapabilities object) accepts a set of parameters that
         will
@@ -420,7 +432,9 @@ cap.setCapability(IOS_SWITCHES, Arrays.asList(new String[]{"-e", "A", "YES","-e"
     </pre>
 </div>
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="rawJS">Raw UIAutomation scripts</h2>
+    <a id="rawJS" class="anchor"></a>
+
+    <h2>Raw UIAutomation scripts</h2>
 
     <p>The underlying framework running the native part is instruments. Instruments tests are
         written in JS. It's possible to execute instruments scripts directly by using the default
@@ -468,7 +482,9 @@ private Object executeScript(String script, Object... args) {
 </div>
 
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="augment">ios-driver specific methods.</h2>
+    <a id="augment" class="anchor"></a>
+
+    <h2>ios-driver specific methods.</h2>
 
     <p>Some ios specific methods do not map directly to the webdriver ones. For those, you can use
         the
