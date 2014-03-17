@@ -24,7 +24,9 @@
 <div class="col-12 col-sm-12 col-lg-12">
     <a id="tech" class="anchor"></a>
 
-    <p> Selenium / Webdriver is a great automation tool for browsers. It comes with a very clean API that
+    <p> Selenium / Webdriver is a great automation tool for browsers. It comes with a very clean API
+        that
+
     <h2>Technical overview</h2>
 
     <p> Webdriver is a great automation tool for browsers. It comes with a very clean API that
@@ -34,21 +36,21 @@
         the
         end,
         whatever you test, as long as the user interacts with a GUI, it is always about
-        <ol>
-            <li>finding an element</li>
-            <li>and then interacting with the element</li>
-        </ol>
+    <ol>
+        <li>finding an element</li>
+        <li>and then interacting with the element</li>
+    </ol>
 
-        Using that API for ios automation has two main advantages:
+    Using that API for ios automation has two main advantages:
     <ol>
         <li>it is a proven and stable API that is about to become a W3C standard</li>
         <li>it decouples the remote implementation from the local client</li>
     </ol>
-        Selenium already comes with
-        Java,
-        C#, Python, Ruby clients. You can reuse whichever one your comfortable with and focus on the
-        business
-        logic of your tests instead of having to learn a new API.</p>
+    Selenium already comes with
+    Java,
+    C#, Python, Ruby clients. You can reuse whichever one your comfortable with and focus on the
+    business
+    logic of your tests instead of having to learn a new API.</p>
 
 
 </div>
@@ -56,7 +58,6 @@
 <div class="col-12 col-sm-12 col-lg-12">
     <a id="sysreq" class="anchor"></a>
 
-    <p> ios-driver is built upon two different frameworks from Apple.</p>
     <h2>System requirements for OSX</h2>
 
     <p> ios-driver is built upon 2 different frameworks from Apple.</p>
@@ -106,7 +107,8 @@ iOS Simulator SDKs:
 
 
 <div class="col-12 col-sm-12 col-lg-12">
-    <h2 id="testapp">Getting a test application</h2>
+    <a id="testapp" class="anchor"></a>
+    <h2 >Getting a test application</h2>
 
     <p> We use an example application from Apple : InternationalMountains. You can also use any
         other app that will work with UIAutomation.
@@ -116,20 +118,26 @@ iOS Simulator SDKs:
     </p>
 
     <p> You can also try <a
-            href="files/UICatalog.app.zip">UICatalog</a> which has an example of the UI element available on iOS.</p>
+            href="files/UICatalog.app.zip">UICatalog</a> which has an example of the UI element
+        available on iOS.</p>
 
 </div>
 
 <div class="col-12 col-sm-12 col-lg-12">
-<h2 id="launch">Launching ios-driver</h2>
+    <a id="launch" class="anchor"></a>
+    <h2 >Launching ios-driver</h2>
 
-<p>Download ios-server-<span class="version"></span>.jar</p>
-<p>Download the latest version of the ios-server <a href="http://ios-driver-ci.ebaystratus.com/userContent/ios-server-standalone-latest.jar"> here.</a></p>
+    <p>Download ios-server-<span class="version"></span>.jar</p>
+
+    <p>Download the latest version of the ios-server <a
+            href="http://ios-driver-ci.ebaystratus.com/userContent/ios-server-standalone-latest.jar">
+        here.</a></p>
 
 
-    <p>Go to the folder where you downloaded the jar, and run the following command:  </p>
+    <p>Go to the folder where you downloaded the jar, and run the following command: </p>
 
-<pre><code>$ java -jar ios-server-<strong class="version">DEFAULT</strong>-standalone.jar -aut path/to/aut.app -port 4444 -simulators
+<pre><code>$ java -jar ios-server-<strong class="version">DEFAULT</strong>-standalone.jar -aut
+    path/to/aut.app -port 4444 -simulators
 </code></pre>
 
     <p>You should see something like the following log in the terminal :</p>
